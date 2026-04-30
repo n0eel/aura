@@ -1,26 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CustomCursor } from "@/components/CustomCursor";
+import { StarField } from "@/components/StarField";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { LoadingScreen } from "@/components/LoadingScreen";
+import { Hero } from "@/components/Hero";
+import { Timeline } from "@/components/Timeline";
+import { Gallery } from "@/components/Gallery";
+import { MusicPlayer } from "@/components/MusicPlayer";
+import { LoveCounter } from "@/components/LoveCounter";
+import { SecretMessages } from "@/components/SecretMessages";
+import { Forever } from "@/components/Forever";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Lumière — A Love Letter from the Future" },
+      {
+        name: "description",
+        content:
+          "An interactive cinematic love letter — emotional, dreamy, and unforgettable. Built for two people, written in starlight.",
+      },
+      { property: "og:title", content: "Lumière — A Love Letter from the Future" },
+      {
+        property: "og:description",
+        content: "A futuristic emotional universe made for two people.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="grain relative min-h-screen overflow-x-hidden bg-background text-foreground">
+      <LoadingScreen />
+      <SmoothScroll />
+      <CustomCursor />
+      <StarField />
+
+      <main className="relative z-10">
+        <Hero />
+        <Timeline />
+        <Gallery />
+        <MusicPlayer />
+        <LoveCounter />
+        <SecretMessages />
+        <Forever />
+      </main>
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
