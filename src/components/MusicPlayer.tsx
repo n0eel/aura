@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import track from "@/assets/by the sea.mp3";
 
 export function MusicPlayer() {
   const [playing, setPlaying] = useState(false);
@@ -127,7 +128,7 @@ export function MusicPlayer() {
               {/* Generated tone (no external file needed) */}
               <audio ref={audioRef} loop>
                 <source
-                  src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQQAAAAAAAA="
+                  src={track}
                   type="audio/wav"
                 />
               </audio>
