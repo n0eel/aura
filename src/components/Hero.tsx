@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import heroImg from "@/assets/hero-couple.jpg";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,7 +13,7 @@ export function Hero() {
     <section ref={ref} className="relative h-screen w-full overflow-hidden">
       <motion.div style={{ scale, y }} className="absolute inset-0">
         <img
-          {/* src={heroImg} */}
+          src={heroImg} 
           alt="Two souls beneath a violet sky"
           className="h-full w-full object-cover opacity-50"
           width={1920}
