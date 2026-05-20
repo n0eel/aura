@@ -84,8 +84,8 @@ export function MusicPlayer() {
             <div className="space-y-6">
               <div>
                 <div className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">now playing</div>
-                <div className="mt-2 font-display text-3xl italic md:text-4xl">Velvet Hours</div>
-                <div className="text-sm text-muted-foreground">Lo-fi · for late nights · 3:14</div>
+                <div className="mt-2 font-display text-3xl italic md:text-4xl">Eternity and A day</div>
+                <div className="text-sm text-muted-foreground">By the sea · 3:14</div>
               </div>
 
               {/* Waveform */}
