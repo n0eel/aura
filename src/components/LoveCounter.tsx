@@ -36,8 +36,10 @@ function Cell({ value, label }: { value: number; label: string }) {
 }
 
 export function LoveCounter() {
-  const [t, setT] = useState(() => diff(new Date()));
+  // Start with zeros to avoid SSR hydration mismatch; start live timer on client
+  const [t, setT] = useState({ days: 0, hours: 0, minutes: 1, seconds: 0 });
   useEffect(() => {
+    setT(diff(new Date()));
     const id = setInterval(() => setT(diff(new Date())), 1000);
     return () => clearInterval(id);
   }, []);
