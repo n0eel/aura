@@ -29,13 +29,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lumière — A Love Letter from the Future" },
+      { title: "aura" },
       { name: "description", content: "A cinematic interactive love letter — emotional, dreamy, unforgettable." },
       { name: "author", content: "Lumière" },
-      { property: "og:title", content: "Lumière — A Love Letter from the Future" },
-      { property: "og:description", content: "A futuristic emotional universe made for two people." },
+      { property: "og:title", content: "aura" },
+      { property: "og:description", content: "A cinematic interactive love letter — emotional, dreamy, unforgettable." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "aura" },
+      { name: "twitter:description", content: "A cinematic interactive love letter — emotional, dreamy, unforgettable." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8604b102-87fc-49a1-b1cc-218c36374ad3/id-preview-8284ed5b--3793d81b-acb7-40d2-87c3-ee1fc2fcb801.lovable.app-1779440393954.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8604b102-87fc-49a1-b1cc-218c36374ad3/id-preview-8284ed5b--3793d81b-acb7-40d2-87c3-ee1fc2fcb801.lovable.app-1779440393954.png" },
     ],
     links: [
       {
