@@ -7,10 +7,10 @@ import mem4 from "@/assets/memory-4.jpg";
 import mem6 from "@/assets/memory-6.jpg";
 
 const events = [
-  { date: "March 14, 2022", title: "First Glance", text: "A crowded café, a borrowed pen, a smile that rearranged the room.", img: mem1 },
-  { date: "July 09, 2022", title: "First Kiss", text: "Rain on neon glass. The city held its breath, and so did we.", img: mem2 },
-  { date: "December 24, 2022", title: "Slow Dance", text: "Fairy lights, no music — just the rhythm of being known.", img: mem4 },
-  { date: "August 02, 2024", title: "Forever", text: "Beneath a violet sky, a question, a yes, an entire universe.", img: mem6 },
+  { date: "X, 2026", title: "First Glance", text: "A crowded café, a borrowed pen, a smile that rearranged the room.", img: mem1 },
+  { date: "X, 2026", title: "First Kiss", text: "Rain on neon glass. The city held its breath, and so did we.", img: mem2 },
+  { date: "X, 2026", title: "Slow Dance", text: "Fairy lights, no music — just the rhythm of being known.", img: mem4 },
+  { date: "X, 2026", title: "Forever", text: "Beneath a violet sky, a question, a yes, an entire universe.", img: mem6 },
 ];
 
 function Item({ ev, i }: { ev: typeof events[number]; i: number }) {
