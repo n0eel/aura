@@ -2,15 +2,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const lines = [
-  "If I could choose any soul,",
-  "in any century, in any sky —",
-  "I would always, always",
-  "choose yours.",
-  "",
-  "You are my favorite accident,",
-  "my softest miracle,",
-  "the only ending I want",
-  "for every story I tell.",
+"Бывают люди, подобные редким космическим явлениям.",
+"Она ворвалась в мою жизнь как самый красивый сон, и её загадка манила меня." ,
+"Мой разум был бессилен перед архитектурой её мыслей — они вращались вокруг неё, подобно кольцам Сатурна, состоящим из бесчисленных ледяных и каменных обломков, крадущих солнечный свет.",
+"Когда она говорила, земной мир переставал существовать; её голос открывал двери в измерение, где царила абсолютная гармония.",
+"Но близость к совершенству порождает тревогу." ,
+"Смогу ли я стать частью её орбиты, или осуждён лишь созерцать со стороны? А может быть, мой истинный страх в другом…",
+"Возможно, я боюсь понять её до конца. Ведь разгадать тайну — значит лишить её магии, превратив недосягаемое божество в кого-то, кто тоже умеет страдать."
 ];
 
 export function LoveLetter() {
@@ -72,7 +70,7 @@ export function LoveLetter() {
               To my forever,
             </div>
 
-            <div className="mt-8 space-y-2 font-display text-2xl italic leading-relaxed text-background md:text-3xl">
+            <div className="mt-8 space-y-2 font-display text-2xl italic leading-relaxed text-background md:text-[15px]">
               {lines.map((line, i) =>
                 line === "" ? (
                   <div key={i} className="h-4" />
