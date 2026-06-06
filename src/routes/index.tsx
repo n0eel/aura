@@ -10,6 +10,10 @@ import { MusicPlayer } from "@/components/MusicPlayer";
 import { LoveCounter } from "@/components/LoveCounter";
 import { SecretMessages } from "@/components/SecretMessages";
 import { Forever } from "@/components/Forever";
+import { HeartTrail } from "@/components/HeartTrail";
+import { Constellation } from "@/components/Constellation";
+import { LoveLetter } from "@/components/LoveLetter";
+import { WishUpon } from "@/components/WishUpon";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,15 +40,19 @@ function Index() {
       <LoadingScreen />
       <SmoothScroll />
       <CustomCursor />
+      <HeartTrail />
       <StarField />
 
       <main className="relative z-10">
         <Hero />
         <Timeline />
         <Gallery />
+        <Constellation />
         <MusicPlayer />
         <LoveCounter />
         <SecretMessages />
+        <LoveLetter />
+        <WishUpon />
         <Forever />
       </main>
     </div>
